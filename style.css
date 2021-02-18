@@ -1,0 +1,130 @@
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #fef6d7;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
+  font-family: "Newsreader", serif;
+}
+
+header,
+footer {
+  background-color: #eee4aa;
+  margin: 0 0 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header p {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+h1,
+h2 {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 2.3em;
+  margin: auto 0;
+}
+
+article:first-of-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 50%;
+  border: 5px inset #fdedaf;
+}
+
+ul,
+ol {
+  list-style: circle;
+}
+
+li {
+  padding: 3px;
+}
+
+ul:nth-child(1),
+ol:nth-child(1) {
+  padding-top: 0;
+}
+
+h3 {
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0.5em;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #e77423;
+}
+
+a:visited {
+  color: #ed975a;
+}
+
+a:hover {
+  color: #ca6116;
+}
+
+a:active {
+  color: #934710;
+}
+
+footer {
+  margin-bottom: 0;
+  margin-top: 1em;
+  font-weight: 600;
+}
+
+hr {
+  overflow: visible; /* For IE */
+  height: 30px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+hr:before {
+  /* Not really supposed to work, but does */
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
